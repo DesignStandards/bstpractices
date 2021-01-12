@@ -20,7 +20,15 @@
     <link rel="top" title="Next Gen Technical Best Practices 1.0.0 documentation" href="#" />
     <link rel="next" title="DesignStandards" href="modules.html" />
 <!-- /linktags -->
-<!-- extrahead --><!-- /extrahead -->
+<!-- extrahead --> 
+ <script src="https://utteranc.es/client.js"
+        repo="DesignStandards/bstpractscomments"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>   
+<!-- /extrahead -->
     <script src="_static/js/modernizr.min.js"></script>
 
 </head>
@@ -189,6 +197,40 @@
     <script type="text/javascript" src="_static/language_data.js"></script>
     <script type="text/javascript" src="_static/js/searchtools.min.js"></script>
     <script type="text/javascript" src="_static/js/autocomplete.min.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "DesignStandards/bstpractscomments");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
     <script type="text/javascript">
         jQuery(function() { Search.loadIndex("searchindex.js"); });
     </script>
