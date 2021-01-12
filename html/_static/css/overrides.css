@@ -41,3 +41,6 @@ p.grace-note {
     padding: 1.4em 0 1.4em 0;
     text-align: center;
 }
+.breadcrumb-additions, .footer-additional {
+    display: none !important;
+}
