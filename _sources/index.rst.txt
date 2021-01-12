@@ -7,14 +7,14 @@ Welcome to Next Gen Technical Best Practices's!
 =============================================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
    :caption: Contents:
 
    modules
 
-.. Indices and tables
-.. ==================
+Topics
+==================
 
 .. * :ref:`genindex`
-.. * :ref:`modindex`
+* :ref:`modindex`
 .. * :ref:`search`
